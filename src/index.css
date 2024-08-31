@@ -1,0 +1,35 @@
+*{
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 3fr; /* Nav e Main ocupam 1/4 e 3/4 */
+  grid-template-rows: auto 1fr auto; /* Header, conteúdo principal e Footer */
+  gap: 20px; /* Espaço entre os elementos */
+  min-height: 100vh;
+}
+
+header {
+  grid-column: 1 / 3; /* Header ocupa a largura inteira */
+}
+
+nav {
+  grid-row: 2;
+}
+
+main {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+aside {
+  grid-column: 2;
+  grid-row: 3;
+}
+
+footer {
+  grid-column: 1 / 3; /* Footer ocupa a largura inteira */
+}
